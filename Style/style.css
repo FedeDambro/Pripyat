@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.header-image {
+    max-width: 30px; /* Adjust the size of the logo */
+    align-self: flex-start; /* Align the image to the left */
+}
+
+.logo:hover {
+    border: 2px solid white; /* Aggiunge un bordo bianco all'immagine del logo al passaggio del mouse */
+}
+
+
+nav {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    position: fixed; /* Ensures the nav bar stays at the top */
+    top: 0;
+    left: 0;
+    display: flex; /* Using flexbox for better alignment */
+    justify-content: center; /* Centers the navigation items */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Using flexbox for horizontal layout */
+    width: 100%;
+    max-width: 3000px;
+    justify-content: space-around; /* Evenly spaces out the nav items */
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 50px; /* Positioned right under the nav bar */
+    left: 0;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+    display: block; /* Replaces float for better alignment */
+    text-align: center;
+}
+
+
+nav ul li:hover ul {
+    display: block; /* Shows the dropdown on hover */
+}
+
+nav ul li li {
+    width: 100%;
+    border: none;
+    background-color: #000; /* Ensures dropdown has the same bg color */
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: darkgray;
+    padding: 15px 25px;
+    font-size: 18px; /* Adjusted for better readability */
+}
+
+nav ul li li a {
+    font-size: 15px;
+}
+
+nav ul li li:hover a {
+    color: white;
+    font-size: large;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+a {
+    position: relative; /* Imposta il link come punto di riferimento per il posizionamento assoluto del tooltip */
+    display: inline-block; /* Assicura che l'elemento 'a' possa contenere elementi assolutamente posizionati */
+}
+
+section {
+    padding: 10px;
+    margin: 0 10%;
+}
+
+article {
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main {
+    flex-grow: 1; /* Allow the main content to grow and fill the space */
+}
+
+
+
+footer {
+    width: 100%; /* Full width */
+    background-color: #636262; /* Footer background color */
+    color: white; /* Text color, change as needed */
+    text-align: center; /* Align text to center, change to left or right if needed */
+    padding: 20px 0; /* Padding for top and bottom */
+    position: relative; /* Ensures footer is at the bottom */
+}
+
+.nav-arrow {
+    text-decoration: none;
+    font-size: 24px; /* Adjust size as needed */
+    position: absolute;
+    bottom: 10px;
+    color: #f4f4f4;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}

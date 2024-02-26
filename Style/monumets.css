@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    padding:0;
+}
+
+header {
+    margin-bottom: 30px; /* Adjust this value as needed */
+    z-index: 1000;
+    position: relative;
+}
+
+section {
+    padding: 20px;
+    margin: 0 10%;
+}
+
+article {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Centra il contenuto */
+}
+
+article h2, article img {
+    display: block; /* Rende h2 e img elementi a blocco */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+article img {
+    width: 100%; /* Larghezza uniforme per tutte le immagini */
+    height: auto; /* Altezza automatica per mantenere il rapporto */
+    border-radius: 5px;
+}
+
+.text {
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: justify; /* Migliora la leggibilità */
+}
+
+.monumenti {
+    display: flex;
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo */
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.colonna {
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Riduci la larghezza per dare spazio a due colonne */
+}
+
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* O la larghezza desiderata */
+    height: 300px; /* Aggiungi un'altezza fissa */
+    overflow: hidden; /* Nasconde eventuali parti dell'immagine che escono dal contenitore */
+}
+
+.image-slide {
+    display: none;
+    width: 100%; /* Garantisce che l'elemento occupi tutta la larghezza del suo contenitore */
+    height: 100%; /* Garantisce che l'elemento occupi tutta l'altezza del suo contenitore */
+}
+
+.image-slide img {
+    width: 100%;
+    height: auto; /* Mantiene il rapporto di aspetto dell'immagine */
+    max-height: 100%; /* Impedisce che l'immagine sia più alta del contenitore */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(21, 20, 20, 0.726);
+    padding-top: 30px; /* Aumenta solo il padding superiore */
+    padding-bottom: 30px; /* Aumenta solo il padding inferiore */
+}
+
+
+@media screen and (max-width: 768px) {
+    .monumenti {
+        flex-direction: column;
+    }
+
+    .colonna {
+        width: 100%;
+    }
+}
+

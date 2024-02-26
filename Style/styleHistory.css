@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 30px; /* Adjust this value as needed */
+    z-index: 1000;
+    position: relative;
+}
+
+.contenuto-principale {
+    margin-top: 80px; /* Regola questo valore in base all'altezza del tuo header */
+}
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+div {
+    display: flex;
+
+}
+p{
+    flex: 1; /* Permette al testo di riempire lo spazio disponibile */
+    padding-right: 20px; /* Distanza dall'immagine */
+    padding-left: 20px; /* Spazio aggiunto prima del testo */
+    font-size: 20px;
+}
+
+image {
+    flex: 1; /* Permette all'immagine di riempire lo spazio disponibile */
+}
+
+img {
+    max-width: 100%; /* Rende l'immagine responsiva */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+
+
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* O la larghezza desiderata */
+    height: 300px; /* Aggiungi un'altezza fissa */
+    overflow: hidden; /* Nasconde eventuali parti dell'immagine che escono dal contenitore */
+    padding-bottom: 50px;
+    z-index: 1;
+}
+
+
+
+.image-slide {
+    display: none;
+    width: 100%; /* Garantisce che l'elemento occupi tutta la larghezza del suo contenitore */
+    height: 100%; /* Garantisce che l'elemento occupi tutta l'altezza del suo contenitore */
+}
+
+.image-slide img {
+    width: 100%;
+    height: auto; /* Mantiene il rapporto di aspetto dell'immagine */
+    max-height: 100%; /* Impedisce che l'immagine sia più alta del contenitore */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(21, 20, 20, 0.726);
+    padding-top: 30px; /* Aumenta solo il padding superiore */
+    padding-bottom: 30px; /* Aumenta solo il padding inferiore */
+}
+
+

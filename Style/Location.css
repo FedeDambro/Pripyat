@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding:0;
+}
+
+header {
+    margin-bottom: 30px; /* Adjust this value as needed */
+    z-index: 1000;
+    position: relative;
+}
+
+li{
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.textVolo{
+    font-size: 25px;
+}
+
+.imgPosition {
+    width: 50%;
+    transition: .7s;
+}
+
+.imgPosition:hover {
+    width: 55%;
+}
+
+
+.textBus{
+    font-size: 25px;
+}
+
+section {
+    padding: 20px;
+    margin: 0 10%;
+}
+
+article {
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.travel-method {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+
+.method-image {
+    width: 50%;
+    transition: .7s;
+    margin-left: auto;
+}
+
+
+
+.method-image:hover {
+    width: 55%;
+}
+
+
+.method-details{
+    width: 40%;
+}
